@@ -1,20 +1,107 @@
-<html>
-    <head>
-        <title>About Us</title>
+<!DOCTYPE html>
 
-        <style>
-            h1 {text-align: center;}
-            h2 {text-align: center;}
-            nav {text-align: center;}
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sematic HTML</title>
+
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        nav {text-align: center;}
+        address{text-align: center;}
         </style>
-    </head>
-    <body>
-        <h1>About Us....</h1>
-        <h2>Coming Soon....</h2>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            header {
+              background-color: #908194;
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
+            }
+            
+            nav {
+              float: left;
+              width: 30%;
+              height: 300px; 
+              background: #777;
+              padding: 20px;
+            }
+            
+            nav ul {
+              list-style-type: none;
+              padding: 0;
+            }
+            
+            article {
+              float: left;
+              padding: 20px;
+              width: 70%;
+              background-color: #f1f1f1;
+              height: 300px; 
+            }
+            
+            section::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            footer {
+              background-color: #777;
+              padding: 10px;
+              text-align: center;
 
-        <nav>
-            <a href="session 2.html">Go Back</a><br><br>
-        </nav>
-    </body>
+              color: white;
+            }
+            
+            
+            @media (max-width: 600px) {
+              nav, article {
+                width: 100%;
+                height: auto;
+              }
+            }
+            </style>
+</head>
+<body>
+    
+        <header>
+
+            <h1>MENU</h1>
+        </header>
+            <section>
+            <nav>
+            <a href="Sign in.html">Sign in</a><br><br>
+                <a href="Tutorial Video.html">Tutorial video</a><br><br>
+                <a href="About Us.html">About Us</a><br><br>
+                <a href="Menu.html">Menu</a><br><br>
+            </nav>
+        
+
+            <article>
+                <h1>About us....</h1>
+                <p>Coming soon......</p>
+            </article>
+        </section>
+        <main>
+
+        </main>
+        <footer>
+                <p>&copy;2023 Machine Learning Seminar. All rights reserved</p>
+                <address>So 8 ton that thuyet, my dinh, tu liem, ha noi</address>
+        </footer>
+</body>
 </html>
