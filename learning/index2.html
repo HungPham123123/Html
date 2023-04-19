@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JavaScript</title>
+</head>
+<body>
+    
+    <h3>JavaScript getElementById...(id,name...)</h3>
+    <p>Pls rate the service:</p>
+    <p>
+        <label for="very-poor">
+            <input type="radio" name="rate" id="very-poor">Very poor
+        </label>
+        <label for="poor">
+            <input type="radio" name="rate" id="poor">Poor
+        </label>
+        <label for="good">
+            <input type="radio" name="rate" id="good">Good
+        </label>
+        <label for="Very-good">
+            <input type="radio" name="rate" id="Very-good">Very good
+        </label>
+    </p>
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+    <p id="output"></p>
+    <script>
+    let btn = document.getElementsByName('btnrate');
+    let output = document.getElementById('output');
+    let vrp = document.getElementById('very-poor');
+    let poor = document.getElementById('poor');
+    let good = document.getElementById('good');
+    let verygood = document.getElementById('very-good'); 
+    if (vrp.checked) {
+        //very- poor
+    }
+    else if (poor.checked) {
+        //poor
+    }
+    else if (good.checked) {
+        //good
+    }
+    else if (verygood.checked) {
+        //very good
+    }
+    else {
+        //nothing
+    }
+    </script>
+
+</body>
+</html>
